@@ -1,7 +1,9 @@
 📌 API de Cadastro de Usuários
 
 API simples para cadastro, listagem, atualização e remoção de usuários, desenvolvida com Node.js, Express, Prisma e MongoDB, com suporte a CORS.
+
 ---
+
 🚀 Tecnologias utilizadas
 
 Node.js
@@ -12,8 +14,10 @@ Prisma
 
 MongoDB
 
-CORS
+Cors
+
 ---
+
 📂 Instalação e execução
 1. Clonar o repositório
 git clone https://github.com/seu-usuario/seu-repo.git
@@ -38,7 +42,9 @@ npm run dev
 A API ficará disponível em:
 
 http://localhost:3000
+
 ---
+
 🔑 Endpoints disponíveis
 ➤ Listar usuários
 GET /usuarios
@@ -54,7 +60,9 @@ Resposta:
     "age": 23
   }
 ]
+
 ---
+
 ➤ Criar usuário
 POST /usuarios
 
@@ -76,7 +84,9 @@ Resposta:
   "email": "lucas@email.com",
   "age": 23
 }
+
 ---
+
 ➤ Atualizar usuário
 PUT /usuarios/:id
 
@@ -98,7 +108,9 @@ Resposta:
   "email": "lucas@email.com",
   "age": 24
 }
+
 ---
+
 ➤ Deletar usuário
 DELETE /usuarios/:id
 
@@ -108,7 +120,9 @@ Resposta:
 {
   "message": "Usuário deletado com sucesso !"
 }
+
 ---
+
 📂 Estrutura de pastas (simplificada)
 api-cadastro-de-usuarios/
 │── prisma/
@@ -118,7 +132,9 @@ api-cadastro-de-usuarios/
 │── server.js
 │── package.json
 │── .env
+
 ---
+
 ⚡ Observações
 
 O CORS está habilitado para qualquer origem.
@@ -126,6 +142,9 @@ O CORS está habilitado para qualquer origem.
 Os dados são salvos em MongoDB via Prisma.
 
 Campos obrigatórios: name, email, age.
+
 ---
+
 ✍️ Autor: Lucas
+
 ---
