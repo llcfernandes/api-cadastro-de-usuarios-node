@@ -1,7 +1,7 @@
 📌 API de Cadastro de Usuários
 
 API simples para cadastro, listagem, atualização e remoção de usuários, desenvolvida com Node.js, Express, Prisma e MongoDB, com suporte a CORS.
-<br>
+---
 🚀 Tecnologias utilizadas
 
 Node.js
