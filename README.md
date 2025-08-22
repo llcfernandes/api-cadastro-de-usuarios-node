@@ -13,7 +13,7 @@ Prisma
 MongoDB
 
 CORS
-<br>
+---
 📂 Instalação e execução
 1. Clonar o repositório
 git clone https://github.com/seu-usuario/seu-repo.git
@@ -38,7 +38,7 @@ npm run dev
 A API ficará disponível em:
 
 http://localhost:3000
-<br>
+---
 🔑 Endpoints disponíveis
 ➤ Listar usuários
 GET /usuarios
@@ -54,7 +54,7 @@ Resposta:
     "age": 23
   }
 ]
-<br>
+---
 ➤ Criar usuário
 POST /usuarios
 
@@ -76,7 +76,7 @@ Resposta:
   "email": "lucas@email.com",
   "age": 23
 }
-<br>
+---
 ➤ Atualizar usuário
 PUT /usuarios/:id
 
@@ -98,7 +98,7 @@ Resposta:
   "email": "lucas@email.com",
   "age": 24
 }
-<br>
+---
 ➤ Deletar usuário
 DELETE /usuarios/:id
 
@@ -108,7 +108,7 @@ Resposta:
 {
   "message": "Usuário deletado com sucesso !"
 }
-<br>
+---
 📂 Estrutura de pastas (simplificada)
 api-cadastro-de-usuarios/
 │── prisma/
@@ -118,7 +118,7 @@ api-cadastro-de-usuarios/
 │── server.js
 │── package.json
 │── .env
-<br>
+---
 ⚡ Observações
 
 O CORS está habilitado para qualquer origem.
@@ -126,6 +126,6 @@ O CORS está habilitado para qualquer origem.
 Os dados são salvos em MongoDB via Prisma.
 
 Campos obrigatórios: name, email, age.
-<br>
+---
 ✍️ Autor: Lucas
-<br>
+---
