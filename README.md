@@ -124,13 +124,21 @@ Resposta:
 ---
 
 📂 Estrutura de pastas (simplificada)
+
 api-cadastro-de-usuarios/
+
 │── prisma/
+
 │   └── schema.prisma
+
 │── generated/
+
 │   └── prisma/
+
 │── server.js
+
 │── package.json
+
 │── .env
 
 ---
