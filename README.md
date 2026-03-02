@@ -153,6 +153,6 @@ Campos obrigatórios: name, email, age.
 
 ---
 
-✍️ Autor: Lucas
+✍️ Autor: Lucas Fernandes
 
 ---
