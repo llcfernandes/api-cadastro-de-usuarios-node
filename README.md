@@ -1,157 +1,137 @@
-📌 API de Cadastro de Usuários
+# ⚙️ User Management API
 
-API simples para cadastro, listagem, atualização e remoção de usuários, desenvolvida com Node.js, Express, Prisma e MongoDB, com suporte a CORS.
+API REST desenvolvida com Node.js, Express, Prisma ORM e MongoDB para gerenciamento de usuários.
+
+A aplicação fornece operações completas de CRUD, servindo como camada de dados para aplicações frontend e demonstrando conceitos fundamentais de desenvolvimento backend moderno.
 
 ---
 
-🚀 Tecnologias utilizadas
+## 📖 Visão Geral
 
-Node.js
+A API foi construída seguindo a arquitetura REST, permitindo que aplicações clientes realizem operações de criação, consulta, atualização e remoção de usuários.
 
-Express
+---
 
-Prisma
+## 🚀 Funcionalidades
 
+### Gestão de Usuários
+
+* Cadastro de usuários
+* Consulta de usuários cadastrados
+* Atualização de registros
+* Exclusão de usuários
+
+### Persistência de Dados
+
+* Integração com MongoDB
+* Modelagem através do Prisma ORM
+* Operações otimizadas de leitura e escrita
+
+### Integração
+
+A API foi desenvolvida para integração com aplicações frontend utilizando requisições HTTP.
+
+---
+
+## 🛠️ Tecnologias
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb" />
+</p>
+
+### Backend
+
+* Node.js
+* Express
+
+### Banco de Dados
+
+* MongoDB
+
+### ORM
+
+* Prisma ORM
+
+### Utilitários
+
+* CORS
+
+---
+
+## 📡 Endpoints
+
+| Método | Endpoint      | Descrição         |
+| ------ | ------------- | ----------------- |
+| GET    | /usuarios     | Listar usuários   |
+| POST   | /usuarios     | Criar usuário     |
+| PUT    | /usuarios/:id | Atualizar usuário |
+| DELETE | /usuarios/:id | Remover usuário   |
+
+---
+
+## 🏗️ Arquitetura
+
+```text
+Client
+   │
+   ▼
+Express Routes
+   │
+   ▼
+Controllers
+   │
+   ▼
+Prisma Client
+   │
+   ▼
 MongoDB
-
-Cors
-
----
-
-📂 Instalação e execução
-1. Clonar o repositório
-git clone https://github.com/seu-usuario/seu-repo.git
-cd api-cadastro-de-usuarios
-
-2. Instalar dependências
-npm install
-
-3. Configurar variáveis de ambiente
-
-Crie um arquivo .env na raiz do projeto com a variável abaixo (ajuste com seus dados do MongoDB):
-
-DATABASE_URL="mongodb+srv://<usuario>:<senha>@<cluster>/<database>?retryWrites=true&w=majority&appName=Users"
-
-4. Rodar migrações do Prisma
-npx prisma generate
-
-5. Iniciar a aplicação
-npm run dev
-
-
-A API ficará disponível em:
-
-http://localhost:3000
+```
 
 ---
 
-🔑 Endpoints disponíveis
-➤ Listar usuários
-GET /usuarios
+## 📂 Estrutura do Projeto
 
+```text
+prisma
+│
+└── schema.prisma
 
-Resposta:
-
-[
-  {
-    "id": "66c0f19d8e8e...",
-    "name": "Lucas",
-    "email": "lucas@email.com",
-    "age": 23
-  }
-]
+server.js
+```
 
 ---
 
-➤ Criar usuário
-POST /usuarios
+## 🔄 Fluxo da Requisição
 
-
-Body:
-
-{
-  "name": "Lucas",
-  "email": "lucas@email.com",
-  "age": 23
-}
-
-
-Resposta:
-
-{
-  "id": "66c0f19d8e8e...",
-  "name": "Lucas",
-  "email": "lucas@email.com",
-  "age": 23
-}
+```text
+Request
+   │
+   ▼
+Express
+   │
+   ▼
+Prisma ORM
+   │
+   ▼
+MongoDB
+   │
+   ▼
+Response
+```
 
 ---
 
-➤ Atualizar usuário
-PUT /usuarios/:id
+## 🎯 Objetivos Técnicos
 
-
-Body:
-
-{
-  "name": "Lucas Mendes",
-  "email": "lucas@email.com",
-  "age": 24
-}
-
-
-Resposta:
-
-{
-  "id": "66c0f19d8e8e...",
-  "name": "Lucas Mendes",
-  "email": "lucas@email.com",
-  "age": 24
-}
+* Desenvolvimento de APIs REST
+* Integração com MongoDB
+* Utilização do Prisma ORM
+* Operações CRUD
+* Comunicação entre Frontend e Backend
+* Estruturação de aplicações Full Stack
 
 ---
 
-➤ Deletar usuário
-DELETE /usuarios/:id
+## 👨‍💻 Autor
 
-
-Resposta:
-
-{
-  "message": "Usuário deletado com sucesso !"
-}
-
----
-
-📂 Estrutura de pastas (simplificada)
-
-api-cadastro-de-usuarios/
-
-│── prisma/
-
-│   └── schema.prisma
-
-│── generated/
-
-│   └── prisma/
-
-│── server.js
-
-│── package.json
-
-│── .env
-
----
-
-⚡ Observações
-
-O CORS está habilitado para qualquer origem.
-
-Os dados são salvos em MongoDB via Prisma.
-
-Campos obrigatórios: name, email, age.
-
----
-
-✍️ Autor: Lucas Fernandes
-
+Desenvolvido por Lucas Fernandes.
