@@ -6,6 +6,16 @@ A aplicação fornece operações completas de CRUD, servindo como camada de dad
 
 ---
 
+## 🌐 Aplicação Integrada
+
+Frontend em produção:
+
+https://cadastro-usuarios-react-eight.vercel.app
+
+A API está publicada em ambiente cloud e integrada ao frontend através de requisições HTTP utilizando Axios.
+
+---
+
 ## 📖 Visão Geral
 
 A API foi construída seguindo a arquitetura REST, permitindo que aplicações clientes realizem operações de criação, consulta, atualização e remoção de usuários.
@@ -58,6 +68,22 @@ A API foi desenvolvida para integração com aplicações frontend utilizando re
 
 ---
 
+## ☁️ Infraestrutura
+
+### Backend
+
+* Render
+
+### Banco de Dados
+
+* MongoDB Atlas
+
+### ORM
+
+* Prisma ORM
+
+---
+
 ## 📡 Endpoints
 
 | Método | Endpoint      | Descrição         |
@@ -75,10 +101,7 @@ A API foi desenvolvida para integração com aplicações frontend utilizando re
 Client
    │
    ▼
-Express Routes
-   │
-   ▼
-Controllers
+Express
    │
    ▼
 Prisma Client
@@ -129,6 +152,7 @@ Response
 * Operações CRUD
 * Comunicação entre Frontend e Backend
 * Estruturação de aplicações Full Stack
+* Deploy de APIs em produção
 
 ---
 
