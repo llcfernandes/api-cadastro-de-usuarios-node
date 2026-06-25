@@ -1,10 +1,14 @@
+![Node.js](https://img.shields.io/badge/Node.js-Backend-339933)
+![Express](https://img.shields.io/badge/Express-REST_API-black)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248)
+![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748)
+![Status](https://img.shields.io/badge/API-Online-success)
+
 # ⚙️ User Management API
 
 API REST desenvolvida com Node.js, Express, Prisma ORM e MongoDB para gerenciamento de usuários.
 
 A aplicação fornece operações completas de CRUD, servindo como camada de dados para aplicações frontend e demonstrando conceitos fundamentais de desenvolvimento backend moderno.
-
----
 
 ## 🌐 Aplicação Integrada
 
